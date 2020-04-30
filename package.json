@@ -8,17 +8,21 @@
     "type": "git"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "author": "Yarn Contributors",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "lodash": "^4.16.2"
+    "lodash": "^4.16.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "jest-cli": "15.1.1"
   },
   "jest": {
     "testEnvironment": "node"
-  }
+  },
+  "snyk": true
 }
